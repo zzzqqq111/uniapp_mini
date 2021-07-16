@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "登录页面",
+  "usingComponents": {
+    "mp-wei-xin": "/pages/login/mp-weixin",
+    "register": "/pages/login/register"
+  }
+}

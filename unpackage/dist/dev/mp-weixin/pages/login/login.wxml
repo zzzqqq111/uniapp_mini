@@ -1,0 +1,1 @@
+<view><block wx:if="{{!isShowUserInfo}}"><mp-wei-xin bind:success="__e" vue-id="35a7246c-1" data-event-opts="{{[['^success',[['onGetUserInfoSuccess']]]]}}" bind:__l="__l"></mp-wei-xin></block><block wx:else><register vue-id="35a7246c-2" bind:__l="__l"></register></block></view>

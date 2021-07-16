@@ -1,5 +1,5 @@
 {
-    "name" : "supplier_wx_mini",
+    "name" : "慧建网",
     "appid" : "",
     "description" : "",
     "versionName" : "1.0.0",
@@ -49,10 +49,10 @@
     /* 快应用特有相关 */
     "mp-weixin" : {
         /* 小程序特有相关 */
-        "appid" : "",
+        "appid" : "wxa350f09c0d77533e",
         "setting" : {
             "urlCheck" : false,
-            "postcss" : true,
+            "postcss" : false,
             "minified" : true
         },
         "usingComponents" : true,
@@ -60,6 +60,9 @@
             "scope.userLocation" : {
                 "desc" : ""
             }
+        },
+        "uniStatistics" : {
+            "enable" : true
         }
     }
 }

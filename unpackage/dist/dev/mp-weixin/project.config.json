@@ -5,13 +5,13 @@
   },
   "setting": {
     "urlCheck": false,
-    "postcss": true,
+    "postcss": false,
     "minified": true
   },
   "compileType": "miniprogram",
   "libVersion": "",
-  "appid": "touristappid",
-  "projectname": "supplier_wx_mini",
+  "appid": "wxa350f09c0d77533e",
+  "projectname": "慧建网",
   "condition": {
     "search": {
       "current": -1,
