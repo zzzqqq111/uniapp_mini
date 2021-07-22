@@ -1,0 +1,1 @@
+<view>商品详情页<view class="goods-carts"><uni-goods-nav vue-id="42752ffe-1" options="{{options}}" buttonGroup="{{buttonGroup}}" fill="{{true}}" data-event-opts="{{[['^buttonClick',[['buttonClick']]],['^click',[['onClick']]]]}}" bind:buttonClick="__e" bind:click="__e" bind:__l="__l"></uni-goods-nav></view></view>

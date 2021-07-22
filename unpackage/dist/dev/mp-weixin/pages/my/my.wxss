@@ -58,7 +58,7 @@ page {
   font-size: 28rpx;
 }
 ._ul ._li {
-  height: 44px;
+  height: 88rpx;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;

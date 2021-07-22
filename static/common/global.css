@@ -3,20 +3,12 @@ body,html{
 	margin: 0;
 }
 
-.padding_5{
-	padding: 25rpx;
+.padding_25{
+	padding: 24rpx;
 }
-
-.justify_flex{
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.padding_vertical_16{
+	padding: 16rpx 0;
 }
-.justify_flex{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.flex_1{
-	flex: 1;
+.padding_hor_25{
+	padding: 0 24rpx;
 }

@@ -2,7 +2,7 @@
 	<view>
 		<uni-search-bar 
 		radius="100" 
-		placeholder="自定义圆角" 
+		placeholder="搜索商品" 
 		@confirm="search" 
 		bgColor='#fff'
 		/>
@@ -20,12 +20,16 @@
 				</swiper-item>
 			</swiper>
 		</view> 
-		<view class="uni-flex tab_box">
+		<uni-notice-bar :show-icon="true" :scrollable="true" :single="true" speed='50' text="uni-app 1.6版正式发布" />
+		<view class="uni-inline-item tab_box padding_25">
 			<view v-for="item in projectTab" :key="item.id" class="tab_item">
 				<image :src="item.icon"></image>
 				<p>{{item.title}}</p>
 			</view>
-			
+		</view>
+		<view class="uni-inline-item tab_box padding_25 title_box">
+			<span>热卖推荐</span>
+			<span @click="goProduct">更多 > </span>
 		</view>
 	</view>
 </template>
@@ -42,21 +46,30 @@
 				href: 'https://uniapp.dcloud.io/component/README?id=uniui',
 				projectTab: [{
 					id: 1,
-					icon: '',
+					icon: 'https://img0.baidu.com/it/u=1000551505,2077899926&fm=26&fmt=auto&gp=0.jpg',
 					title: '居家生活'
 				},{
 					id: 2,
-					icon: '',
-					title: '手机数码2'
+					icon: 'https://img0.baidu.com/it/u=1000551505,2077899926&fm=26&fmt=auto&gp=0.jpg',
+					title: '手机数码'
 				}, {
 					id: 3,
-					icon: '',
+					icon: 'https://img0.baidu.com/it/u=1000551505,2077899926&fm=26&fmt=auto&gp=0.jpg',
+					title: '领券中心'
+				}, {
+					id: 4,
+					icon: 'https://img0.baidu.com/it/u=1000551505,2077899926&fm=26&fmt=auto&gp=0.jpg',
 					title: '领券中心'
 				}]
 			}
 		},
 		methods: {
-
+			search(value){
+				console.log(value)
+			},
+			goProduct(){
+				this.$navTo('pages/product/product')
+			}
 		}
 	}
 </script>
@@ -99,9 +112,14 @@
 	}
 	.tab_box{
 		justify-content: space-between;
+		text-align: center;
 	}
 	.tab_item image{
 		width: 56px;
 		height: 56px;
+	}
+	.title_box span:first-child{
+		font-size: 36rpx;
+		font-weight: bold;
 	}
 </style>

@@ -57,9 +57,14 @@
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
           justify-content: space-between;
+  text-align: center;
 }
 .tab_item image {
   width: 56px;
   height: 56px;
+}
+.title_box ._span:first-child {
+  font-size: 36rpx;
+  font-weight: bold;
 }
 

@@ -99,7 +99,7 @@
 	}
 
 	ul li {
-		height: 44px;
+		height: 88rpx;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;

@@ -63,7 +63,6 @@
 				uni.chooseImage({
 					count: 1,
 					sizeType: ['compressed'],
-					sourceType: ['album'],
 					success: (res) => {
 						console.log('chooseImage success, temp path is', res.tempFilePaths[0])
 						var imageSrc = res.tempFilePaths[0]
@@ -120,7 +119,7 @@
 <style lang="scss">
 	page {
 		background: #EEEEEE;
-		font-size: 14px;
+		font-size: 28rpx;
 	}
 
 	.uni-form-item {
@@ -139,26 +138,27 @@
 
 	.submitBtn {
 		background: $uni-main-color;
-		margin-top: 20px;
+		margin-top: 40rpx;
 		color: #FFFFFF;
 		border-radius: 20px;
-		height: 44px;
-		line-height: 44px;
+		height: 88rpx;
+		line-height: 88rpx;
 		width: 80%;
-		font-size: 14px;
+		font-size: 28rpx;
 	}
 
 	.uploadBtn {
-		width: 125px;
-		height: 125px;
+		width: 250rpx;
+		height: 250rpx;
 		background: #FFFFFF;
 		border: 1px solid #e8e8e8;
 		text-align: center;
-		line-height: 125px;
-		margin-right: 16px;
+		line-height: 250rpx;
+		margin-right: 32rpx;
 	}
 
 	.uploadBtn image {
 		width: 100%;
+		height: 100%;
 	}
 </style>
