@@ -6,7 +6,10 @@
     "pages/shopCard/shopCard",
     "pages/category/category",
     "pages/product/product",
-    "pages/productDetail/productDetail"
+    "pages/productDetail/productDetail",
+    "pages/address/address",
+    "pages/address/address_edit",
+    "pages/createOrder/createOrder"
   ],
   "subPackages": [],
   "window": {

@@ -1,0 +1,16 @@
+
+.left_icon.data-v-0ee80fec, .left_icon.data-v-0ee80fec{
+	width: 24px;
+	height: 24px;
+}
+.middle.data-v-0ee80fec{
+	padding: 0 15px;
+	line-height: 32px;
+}
+.middle text.data-v-0ee80fec{
+	display: block;
+}
+.middle text.data-v-0ee80fec:nth-child(2){
+	color: #999;
+}
+

@@ -18,8 +18,7 @@
   margin: 0 auto 0;
   border-radius: 50%;
   overflow: hidden;
-  -webkit-box-shadow: 2rpx 0 10rpx rgba(50, 50, 50, 0.3);
-          box-shadow: 2rpx 0 10rpx rgba(50, 50, 50, 0.3);
+  box-shadow: 2rpx 0 10rpx rgba(50, 50, 50, 0.3);
 }
 .auth-title.data-v-11ae7c3d {
   color: #585858;

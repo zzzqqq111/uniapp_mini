@@ -28,12 +28,8 @@ page {
   background: #EEEEEE;
 }
 .wx_info_box {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-          align-items: center;
+  align-items: center;
   padding: 50rpx 0 25rpx;
   background-color: #fbf7ef;
   color: #ddc290;
@@ -59,27 +55,17 @@ page {
 }
 ._ul ._li {
   height: 88rpx;
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 16rpx;
   background: #FFFFFF;
   padding: 0 24rpx;
   font-size: 28rpx;
 }
 ._ul ._li view {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-          align-items: center;
+  align-items: center;
 }
 ._ul ._li image {
   width: 48rpx;

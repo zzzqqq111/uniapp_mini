@@ -1,0 +1,38 @@
+
+.container{
+	padding: 0;
+	height: 100vh;
+	background-color: #f6f7f8;
+}
+.address_select{
+	background: #fff;
+	border-bottom: solid 2rpx #f1efec;
+	padding: 32rpx;
+	box-sizing: border-box;
+}
+.middle text{
+	display: block;
+}
+.middle text:nth-child(2){
+	margin-top: 32rpx;
+}
+.edit_class{
+	width: 70rpx;
+}
+.edit_button{
+	position: absolute;
+	bottom: 30rpx;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 650rpx;
+	z-index: 1;
+	background-color: #353535;
+	font-size: 28rpx;
+	color: #fff;
+	border-radius: 20px;
+}
+.scoll_body{
+	height: calc(100vh - 130rpx)
+}
+

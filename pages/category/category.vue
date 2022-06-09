@@ -9,7 +9,7 @@
 		<!-- 右侧 -->
 		<scroll-view class="cate-right" :style="{height: `${scrollHeight}px`}" scroll-y="true">
 			<view v-if="list[curIndex]" class="cate-content-box">
-				<view class="flex-three" v-for="(item, idx) in list[curIndex].children" :key="idx">
+				<view class="flex-three" v-for="(item, idx) in list[curIndex].children" :key="idx" @click="goDetail" :id="item.id">
 					<view class="cate-img">
 						<image v-if="item.image" :src="item.image"></image>
 					</view>
@@ -632,6 +632,13 @@
 			
 			handleSelectNav(index){
 				this.curIndex = index
+			},
+			
+			goDetail(e){
+				console.log(e)
+				uni.navigateTo({
+					url: "/pages/productDetail/productDetail"
+				})
 			}
 		}
 	}

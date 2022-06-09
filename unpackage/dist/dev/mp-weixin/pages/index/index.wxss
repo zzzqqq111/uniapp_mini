@@ -54,9 +54,7 @@
   padding: 0 100rpx;
 }
 .tab_box {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-          justify-content: space-between;
+  justify-content: space-between;
   text-align: center;
 }
 .tab_item image {

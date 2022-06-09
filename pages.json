@@ -40,7 +40,32 @@
 				"navigationBarTitleText": "详情"
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/address/address",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "地址管理",
+                "enablePullDownRefresh": false
+            }
+        }
+		,{
+		    "path" : "pages/address/address_edit",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "地址编辑",
+		        "enablePullDownRefresh": false
+		    }
+		}
+        ,{
+            "path" : "pages/createOrder/createOrder",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "订单支付",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white", // 导航栏标题颜色及状态栏前景颜色，仅支持 black/white
 		"navigationBarTitleText": "供应商", // 导航栏标题文字内容

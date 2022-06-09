@@ -1,11 +1,6 @@
 <template>
 	<view>
-		<uni-search-bar 
-		radius="100" 
-		placeholder="搜索商品" 
-		@confirm="search" 
-		bgColor='#fff'
-		/>
+		<uni-search-bar radius="100" placeholder="搜索商品" @confirm="search" bgColor='#fff' />
 		<view class="uni-margin-wrap">
 			<swiper class="swiper" circular :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval"
 				:duration="duration">
@@ -19,7 +14,7 @@
 					<view class="swiper-item uni-bg-blue">C</view>
 				</swiper-item>
 			</swiper>
-		</view> 
+		</view>
 		<uni-notice-bar :show-icon="true" :scrollable="true" :single="true" speed='50' text="uni-app 1.6版正式发布" />
 		<view class="uni-inline-item tab_box padding_25">
 			<view v-for="item in projectTab" :key="item.id" class="tab_item">
@@ -48,7 +43,7 @@
 					id: 1,
 					icon: 'https://img0.baidu.com/it/u=1000551505,2077899926&fm=26&fmt=auto&gp=0.jpg',
 					title: '居家生活'
-				},{
+				}, {
 					id: 2,
 					icon: 'https://img0.baidu.com/it/u=1000551505,2077899926&fm=26&fmt=auto&gp=0.jpg',
 					title: '手机数码'
@@ -64,11 +59,17 @@
 			}
 		},
 		methods: {
-			search(value){
+			search(value) {
 				console.log(value)
 			},
-			goProduct(){
-				this.$navTo('pages/product/product')
+			goProduct() {
+				uni.getLocation({
+					type: 'wgs84',
+					success(res) {
+						console.log(res)
+					}
+				})
+				// this.$navTo('pages/product/product')
 			}
 		}
 	}
@@ -110,15 +111,18 @@
 		width: 550rpx;
 		padding: 0 100rpx;
 	}
-	.tab_box{
+
+	.tab_box {
 		justify-content: space-between;
 		text-align: center;
 	}
-	.tab_item image{
+
+	.tab_item image {
 		width: 56px;
 		height: 56px;
 	}
-	.title_box span:first-child{
+
+	.title_box span:first-child {
 		font-size: 36rpx;
 		font-weight: bold;
 	}

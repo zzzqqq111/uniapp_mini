@@ -64,5 +64,10 @@
         "uniStatistics" : {
             "enable" : true
         }
+    },
+    "h5" : {
+        "sdkConfigs" : {
+            "maps" : {}
+        }
     }
 }

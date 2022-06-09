@@ -50,29 +50,29 @@
 			 * 获取权限
 			 */
 			getAuthorize() {
-				uni.authorize({
-					scope: 'scope.userLocation',
-					success() {
-						// 引入腾讯地图api
-						let qqmapsdk = new QQMapWX({
-							key: 'URLBZ-TTWRG-J74QW-IHZT7-R4GYJ-I5BJM'
-						});
-						uni.getLocation({
-							type: 'gcj02',
-							success: function(res) {
-								qqmapsdk.reverseGeocoder({
-									location: {
-										latitude: res.latitude,
-										longitude: res.longitude
-									},
-									success(res){
-										console.log('res', res.result.address)
-									}
-								})
-							}
-						})
-					}
-				})
+				// uni.authorize({
+				// 	scope: 'scope.userLocation',
+				// 	success() {
+				// 		// 引入腾讯地图api
+				// 		let qqmapsdk = new QQMapWX({
+				// 			key: 'URLBZ-TTWRG-J74QW-IHZT7-R4GYJ-I5BJM'
+				// 		});
+				// 		uni.getLocation({
+				// 			type: 'gcj02',
+				// 			success: function(res) {
+				// 				qqmapsdk.reverseGeocoder({
+				// 					location: {
+				// 						latitude: res.latitude,
+				// 						longitude: res.longitude
+				// 					},
+				// 					success(res){
+				// 						console.log('res', res.result.address)
+				// 					}
+				// 				})
+				// 			}
+				// 		})
+				// 	}
+				// })
 			}
 		}
 	}
